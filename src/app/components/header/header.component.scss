@@ -1,0 +1,38 @@
+mat-toolbar {
+  & i.fa-gamepad {
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    position: relative;
+    top: 0.2rem;
+  }
+
+  & ul {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 1.4rem;
+    margin: 0;
+    float: right;
+
+    & li {
+      & i.fa {
+        margin-left: 0.25rem;
+      }
+
+      & a {
+        color: #fff;
+        cursor: pointer;
+        transition: all ease 0.25s;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: solid 2px #fff;
+          padding-bottom: 0.5rem;
+        }
+
+        &:first-of-type {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
