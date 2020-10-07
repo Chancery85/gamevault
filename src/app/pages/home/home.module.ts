@@ -4,14 +4,16 @@ import { HomeComponent } from './home.component';
 import { HomeModuleRouting } from "./home.module.routing";
 import { GameItemComponent } from './game-item/game-item.component';
 import { GameEditComponent } from './game-item/game-edit/game-edit.component';
-
-
+import { MatCardModule } from "@angular/material/card";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [HomeComponent, GameItemComponent, GameEditComponent],
   imports: [
     CommonModule,
-    HomeModuleRouting
+    HomeModuleRouting,
+    MatCardModule,
+    MatButtonModule,
   ]
 })
 export class HomeModule { }

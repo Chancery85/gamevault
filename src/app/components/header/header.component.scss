@@ -27,6 +27,11 @@ mat-toolbar {
   background: #333;
   color: #fff;
 }
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  border-bottom: solid 3px #5cadff;
+}
+
 /* All */
 nav{
   position: absolute;
