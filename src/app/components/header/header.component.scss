@@ -1,38 +1,97 @@
 mat-toolbar {
-  & a {
+  a {
     color: #fff;
     cursor: pointer;
-    transition: all ease 0.25s;
     text-decoration: none;
-
-    &:hover {
-      border-bottom: solid 2px #fff;
-      padding-bottom: 0.5rem;
-    }
-
-    &:first-of-type {
-      margin-right: 3rem;
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 0.9rem;
+    padding: 0;
+    &.brand-link{
+      font-size:1.4rem;
     }
   }
 
   & i.fa-gamepad {
     margin-right: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: relative;
-    top: 0.2rem;
+    top: 0.25rem;
   }
 
-  & ul {
-    display: inline-flex;
-    list-style-type: none;
-    font-size: 1.4rem;
-    margin: 0;
-    float: right;
-
-    & li {
-      & i.fa {
-        margin-left: 0.25rem;
-      }
-    }
+  i.fa {
+    margin-left: 0.25rem;
   }
+}
+.mat-toolbar.mat-primary {
+  background: #333;
+  color: #fff;
+}
+/* All */
+nav{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.nav ul {
+  *zoom: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+.nav ul:before,
+.nav ul:after {
+  content: "";
+  display: table;
+}
+.nav ul:after {
+  clear: both;
+}
+.nav ul > li {
+  float: right;
+  position: relative;
+}
+.nav a {
+  display: block;
+  padding: 4px 20px;
+  color: #fff;
+  transition: all ease 0.2s;
+}
+.nav a:hover {
+  text-decoration: none;
+  color: #5cadff;
+  & i.spin-right{
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+/* Slide Down
+============================== */
+.nav3 ul > li:hover ul li {
+  height: 40px;
+}
+.nav3 li ul {
+  position: absolute;
+  left: 0;
+  width:120px;
+  top: 40px;
+  z-index: 1;
+}
+.nav3 li ul li {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+  float:none;
 }

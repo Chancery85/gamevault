@@ -1,15 +1,26 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl">
-          <i class="fas fa-gamepad"></i><a [routerLink]="'home'"><span>GAME VAULT</span></a>
-          <ul>
-            <li><a [routerLink]="'my-vault'">MY GAMES</a></li>
-            <li><a>MANAGE <i class="fa fa-caret-right"></i></a></li>
-          </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl">
+              <i class="fas fa-gamepad"></i>
+              <a class="brand-link" [routerLink]="'home'"><span>GAME VAULT</span></a>
+              <nav class="nav nav3">
+                <ul>
+                  <li>
+                    <a href="#">MANAGE <i class="fas fa-cog icon-space-right spin-right"></i></a>
+                    <ul>
+                      <li><a href="#">SAVE&nbsp;&nbsp;<i class="far fa-save icon-space-right"></i></a></li>
+                      <li><a href="#">PULL&nbsp;&nbsp;<i class="fas fa-cloud-download-alt icon-space-right"></i></a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">MY GAMES</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
   </mat-toolbar-row>
 </mat-toolbar>
