@@ -1,0 +1,20 @@
+h2 {
+  font-weight:300;
+  font-size:1rem;
+  & .user-name{
+    color:#5cadff;
+    font-weight: normal;
+  }
+}
+
+p.game-heading{
+  border-left: solid 3px #5cadff;
+  padding-left:0.5rem;
+  font-size: 1.3rem;
+  font-weight:300;
+}
+
+hr {
+  margin-top:0;
+}
+

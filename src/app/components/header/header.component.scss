@@ -7,9 +7,15 @@ mat-toolbar {
     list-style-type: none;
     font-size: 0.9rem;
     padding: 0;
-    &.brand-link{
-      font-size:1.4rem;
+
+    &.brand-link {
+      font-size: 1.4rem;
     }
+  }
+  & .user-name {
+    font-size:0.9rem;
+    color: #5cadff;
+    margin-left:2rem;
   }
 
   & i.fa-gamepad {
@@ -23,6 +29,7 @@ mat-toolbar {
     margin-left: 0.25rem;
   }
 }
+
 .mat-toolbar.mat-primary {
   background: #333;
   color: #fff;
@@ -33,11 +40,12 @@ mat-toolbar {
 }
 
 /* All */
-nav{
+nav {
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
 }
+
 .nav ul {
   *zoom: 1;
   list-style: none;
@@ -45,28 +53,34 @@ nav{
   padding: 0;
   background: #333;
 }
+
 .nav ul:before,
 .nav ul:after {
   content: "";
   display: table;
 }
+
 .nav ul:after {
   clear: both;
 }
+
 .nav ul > li {
   float: right;
   position: relative;
 }
+
 .nav a {
   display: block;
   padding: 4px 20px;
   color: #fff;
   transition: all ease 0.2s;
 }
+
 .nav a:hover {
   text-decoration: none;
   color: #5cadff;
-  & i.spin-right{
+
+  & i.spin-right {
     -webkit-transition: 0.70s;
     -moz-transition: 0.70s;
     -ms-transition: 0.70s;
@@ -84,13 +98,15 @@ nav{
 .nav3 ul > li:hover ul li {
   height: 40px;
 }
+
 .nav3 li ul {
   position: absolute;
   left: 0;
-  width:120px;
+  width: 120px;
   top: 40px;
   z-index: 1;
 }
+
 .nav3 li ul li {
   overflow: hidden;
   height: 0;
@@ -98,5 +114,6 @@ nav{
   -moz-transition: height 200ms ease-in;
   -o-transition: height 200ms ease-in;
   transition: height 200ms ease-in;
-  float:none;
+  float: none;
+  font-size: 0.8rem
 }
