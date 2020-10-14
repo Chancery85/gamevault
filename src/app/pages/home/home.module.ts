@@ -6,7 +6,6 @@ import { GameItemComponent } from './game-item/game-item.component';
 import { GameEditComponent } from './game-item/game-edit/game-edit.component';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
-import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [HomeComponent, GameItemComponent, GameEditComponent],
