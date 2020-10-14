@@ -16,8 +16,9 @@
     </div>
   </div>
 </div>
-<div class="row mx-auto row-cols-4 mt-1">
-  <div class="col mb-2">
-    <app-game-item></app-game-item>
+<div class="row mx-auto mt-1">
+  <div class="col-sm col-md-6 col-lg-4 col-xl-3 mb-2"
+       *ngFor="let gameItem of gameData">
+    <app-game-item [game]="gameItem"></app-game-item>
   </div>
 </div>

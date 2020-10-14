@@ -74,6 +74,9 @@ nav {
   padding: 4px 20px;
   color: #fff;
   transition: all ease 0.2s;
+  &.active {
+    color:#5cadff;
+  }
 }
 
 .nav a:hover {

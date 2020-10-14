@@ -1,13 +1,11 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title>GENSHIN IMPACT</mat-card-title>
-    <mat-card-subtitle>RPG</mat-card-subtitle>
+    <mat-card-title>{{game?.name | uppercase}}</mat-card-title>
+    <mat-card-subtitle>{{game?.genre | uppercase}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464" alt="Photo of a Shiba Inu">
+  <img mat-card-image [src]="game?.imgPath" [alt]="game?.name">
   <mat-card-content>
-    <p>
-      Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics.
-    </p>
+    <p>{{game?.description}}</p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button><i class="fas fa-check"></i> &nbsp; SAVE</button>
