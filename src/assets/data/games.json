@@ -6,5 +6,125 @@
     "rating": 8.5,
     "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
     "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 2,
+    "name": "Ghost of Tsushima",
+    "genre": "ACTION",
+    "rating": 8.3,
+    "imgPath": "https://blog.playstation.com/tachyon/2020/07/ghost-ost-featured.jpg",
+    "description": "Ghost of Tsushima is an action-adventure game developed by Sucker Punch and published by Sony Interactive Entertainment for PlayStation 4. Featuring an open world, it follows a samurai on a quest to protect Tsushima."
+  },
+  {
+    "id": 3,
+    "name": "The Last of US Part II",
+    "genre": "ACTION / ADVENTURE",
+    "rating": 9.3,
+    "imgPath": "https://s3.us-east-1.amazonaws.com/nd.images/uploads/d20161201_03_Reveal_Trailer_Thumbs_01.jpg",
+    "description": "The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment for the PlayStation 4."
+  },
+  {
+    "id": 4,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 5,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 6,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 7,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 8,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 9,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 10,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 11,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 12,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 13,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 14,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 15,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+  },
+  {
+    "id": 16,
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "rating": 8.5,
+    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
   }
 ]
