@@ -74,6 +74,7 @@ nav {
   padding: 4px 20px;
   color: #fff;
   transition: all ease 0.2s;
+  font-size: 0.8rem;
   &.active {
     color:#5cadff;
   }
@@ -98,11 +99,11 @@ nav {
 
 /* Slide Down
 ============================== */
-.nav3 ul > li:hover ul li {
+.nav ul > li:hover ul li {
   height: 40px;
 }
 
-.nav3 li ul {
+.nav li ul {
   position: absolute;
   left: 0;
   width: 120px;
@@ -110,7 +111,7 @@ nav {
   z-index: 1;
 }
 
-.nav3 li ul li {
+.nav li ul li {
   overflow: hidden;
   height: 0;
   -webkit-transition: height 200ms ease-in;

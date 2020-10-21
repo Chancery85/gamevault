@@ -5,4 +5,5 @@ export interface Game {
   rating: number;
   imgPath: string;
   description: string;
+  favorite?: boolean;
 }

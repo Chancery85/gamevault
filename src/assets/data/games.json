@@ -5,7 +5,8 @@
     "genre": "RPG",
     "rating": 8.5,
     "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics.",
+    "favorite": true
   },
   {
     "id": 2,
@@ -13,118 +14,133 @@
     "genre": "ACTION",
     "rating": 8.3,
     "imgPath": "https://blog.playstation.com/tachyon/2020/07/ghost-ost-featured.jpg",
-    "description": "Ghost of Tsushima is an action-adventure game developed by Sucker Punch and published by Sony Interactive Entertainment for PlayStation 4. Featuring an open world, it follows a samurai on a quest to protect Tsushima."
+    "description": "Ghost of Tsushima is an action-adventure game developed by Sucker Punch and published by Sony Interactive Entertainment for PlayStation 4. Featuring an open world, it follows a samurai on a quest to protect Tsushima.",
+    "favorite": false
   },
   {
     "id": 3,
     "name": "The Last of US Part II",
-    "genre": "ACTION / ADVENTURE",
+    "genre": "ACTION",
     "rating": 9.3,
     "imgPath": "https://s3.us-east-1.amazonaws.com/nd.images/uploads/d20161201_03_Reveal_Trailer_Thumbs_01.jpg",
-    "description": "The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment for the PlayStation 4."
+    "description": "The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment for the PlayStation 4.",
+    "favorite": true
   },
   {
     "id": 4,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Fortnite",
+    "genre": "FPS",
+    "rating": 9.6,
+    "imgPath": "https://image-cdn.essentiallysports.com/wp-content/uploads/20200617190129/fortnite-season-3-battle-pass-skins-1600x901.jpg",
+    "description": "Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine.",
+    "favorite": false
   },
   {
     "id": 5,
-    "name": "Genshin Impact",
+    "name": "Cyberpunk 2077",
     "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "rating": 10,
+    "imgPath": "https://c.files.bbci.co.uk/185CD/production/_114698799_cyberpunk2077_5ecfe92351d704_86615862-png-1024x576.png",
+    "description": "Cyberpunk 2077 is an upcoming action role-playing video game developed and published by CD Projekt. It is scheduled to be released for Microsoft Windows, PlayStation 4, PlayStation 5, Stadia, Xbox One, and Xbox Series X/S on 19 November 2020.",
+    "favorite": false
   },
   {
     "id": 6,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Resident Evil 3",
+    "genre": "HORROR",
+    "rating": 7,
+    "imgPath": "https://cdn.mos.cms.futurecdn.net/eo9aoDpbyXkRfUruh5FVLi-1024-80.jpg.webp",
+    "description": "Resident Evil 3 is a survival horror game developed and published by Capcom. It is a remake of Resident Evil 3: Nemesis and follows Jill Valentine and Carlos Oliveira as they attempt to survive a zombie apocalypse.",
+    "favorite": false
   },
   {
     "id": 7,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Half-Life: Alyx",
+    "genre": "FPS",
+    "rating": 10,
+    "imgPath": "https://steamcdn-a.akamaihd.net/steam/apps/546560/capsule_616x353.jpg?t=1590678263",
+    "description": "Half-Life: Alyx is a 2020 virtual reality first-person shooter developed and published by Valve. Between the events of Half-Life and Half-Life 2, players control Alyx Vance on a mission to seize a superweapon belonging to the alien Combine.",
+    "favorite": false
   },
   {
     "id": 8,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Rocket League",
+    "genre": "ACTION",
+    "rating": 9.5,
+    "imgPath": "https://www.nintendo.com/content/dam/noa/en_US/games/switch/r/rocket-league-switch/rocket-league-switch-hero.jpg",
+    "description": "Rocket League is a vehicular soccer video game developed and published by Psyonix. The game was first released for Microsoft Windows and PlayStation 4 in July 2015, with ports for Xbox One and Nintendo Switch being released later on.",
+    "favorite": true
   },
   {
     "id": 9,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Death Stranding",
+    "genre": "HORROR",
+    "rating": 8.7,
+    "imgPath": "https://steamcdn-a.akamaihd.net/steam/apps/1190460/capsule_616x353.jpg?t=1595954430",
+    "description": "Death Stranding is an action game developed by Kojima Productions. It is the first game from director Hideo Kojima and Kojima Productions after their split from Konami in 2015.",
+    "favorite": false
   },
   {
     "id": 10,
-    "name": "Genshin Impact",
+    "name": "Persona 5 Royal",
     "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "rating": 9.7,
+    "imgPath": "https://cdn.mos.cms.futurecdn.net/8kFgCvZNdXfMxoK5dpxUmm.jpg",
+    "description": "Persona 5 is a role-playing video game developed by Atlus. It is the sixth installment in the Persona series, which is part of the larger Megami Tensei franchise.",
+    "favorite": true
   },
   {
     "id": 11,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Apex Legends",
+    "genre": "FPS",
+    "rating": 9.1,
+    "imgPath": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2020/10/apex-champion-edittion-featured-image.jpg.adapt.crop16x9.431p.jpg",
+    "description": "Apex Legends is a free-to-play first-person shooter battle royale game developed by Respawn Entertainment and published by Electronic Arts.  It was released for Microsoft Windows, PlayStation 4, and Xbox One on February 4, 2019.",
+    "favorite": false
   },
   {
     "id": 12,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Grand Theft Auto V",
+    "genre": "ACTION",
+    "rating": 9.5,
+    "imgPath": "https://hb.imgix.net/ad3f96dfd21531e24ab72c3821a01049c8484982.jpg?auto=compress,format&fit=crop&h=353&w=616&s=9fc123b4c723d329d164b8ab02af5284",
+    "description": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV.",
+    "favorite": false
   },
   {
     "id": 13,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Dark Souls",
+    "genre": "ACTION",
+    "rating": 9,
+    "imgPath": "https://steamuserimages-a.akamaihd.net/ugc/957462736269894963/7E08070E790C885CCABA985E8C5B7B16E98FD454/",
+    "description": "Dark Souls is a 2011 action role-playing game developed by FromSoftware and published by Namco Bandai Games. A spiritual successor to FromSoftware's Demon's Souls, the game is the second instalment in the Souls series.",
+    "favorite": true
   },
   {
     "id": 14,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Firewatch",
+    "genre": "ADVENTURE",
+    "rating": 8,
+    "imgPath": "https://steamcdn-a.akamaihd.net/steam/apps/383870/capsule_616x353.jpg?t=1602536561",
+    "description": "Firewatch is an adventure game developed by Campo Santo and published by the developer in partnership with Panic. The game was released in February 2016 for Microsoft Windows, OS X, Linux, and PlayStation 4, for Xbox One in September 2016.",
+    "favorite": false
   },
   {
     "id": 15,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Red Dead Redemption II",
+    "genre": "ACTION",
+    "rating": 7,
+    "imgPath": "https://steamcdn-a.akamaihd.net/steam/apps/1174180/capsule_616x353.jpg?t=1597419522",
+    "description": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and is a prequel to the 2010 game Red Dead.",
+    "favorite": false
   },
   {
     "id": 16,
-    "name": "Genshin Impact",
-    "genre": "RPG",
-    "rating": 8.5,
-    "imgPath": "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/eqxnk5a1pu5xtttb_1601550525.jpeg?tr=w-812,h-464",
-    "description": "Genshin Impact is a free-to-play action role-playing game developed and published by miHoYo, who are known for Honkai Impact 3rd, a popular action game. The game features a fantasy-based open world with rpg game mechanics."
+    "name": "Horizon Zero Dawn",
+    "genre": "ADVENTURE",
+    "rating": 9.2,
+    "imgPath": "https://steamcdn-a.akamaihd.net/steam/apps/1151640/capsule_616x353.jpg?t=1596817204",
+    "description": "Horizon Zero Dawn is an action role-playing game developed by Guerrilla Games and published by Sony Interactive Entertainment. The plot follows Aloy, a hunter in a world overrun by machines, who sets out to uncover her past.",
+    "favorite": false
   }
 ]
