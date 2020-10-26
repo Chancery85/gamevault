@@ -1,4 +1,7 @@
 mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 9;
   a {
     color: #fff;
     cursor: pointer;
@@ -12,10 +15,11 @@ mat-toolbar {
       font-size: 1.4rem;
     }
   }
+
   & .user-name {
-    font-size:0.9rem;
+    font-size: 0.9rem;
     color: #5cadff;
-    margin-left:2rem;
+    margin-left: 2rem;
   }
 
   & i.fa-gamepad {
@@ -75,8 +79,9 @@ nav {
   color: #fff;
   transition: all ease 0.2s;
   font-size: 0.8rem;
+
   &.active {
-    color:#5cadff;
+    color: #5cadff;
   }
 }
 
