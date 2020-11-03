@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+//defaults
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-form-field {
+  width:100%;
+}
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+  outline: none;
+  box-shadow: none;
+}
+
