@@ -6,7 +6,7 @@
           <h1>LOGIN</h1>
           <div class="col-12">
             <mat-form-field>
-              <mat-label>USER NAME</mat-label>
+              <mat-label>User name</mat-label>
               <input
                 required
                 formControlName="username"
@@ -16,7 +16,7 @@
           </div>
           <div class="col-12">
             <mat-form-field>
-              <mat-label>PASSWORD</mat-label>
+              <mat-label>Password</mat-label>
               <input
                 required
                 formControlName="password"
@@ -27,17 +27,17 @@
           <div class="col-12 mt-2 mb-3 text-right">
             <button type="submit" class="btn btn-primary btn-sm btn-block">LOGIN</button>
           </div>
-          <div class="col-12">
-            New to Game Vault? <a (click)="loggedIn = false" class="btn-link">SIGNUP</a>
+          <div class="col-12 register-offer">
+            New to Game Vault? <a (click)="loggedIn = false" class="mat-tab-link">REGISTER</a>
           </div>
         </div>
 
         <div class="form-container" *ngIf="!loggedIn">
-          <button (click)="loggedIn = true" class="btn btn-secondary btn-sm float-right"><i class="fas fa-times"></i></button>
-          <h1>SIGN UP</h1>
+          <button (click)="loggedIn = true" class="btn btn-secondary btn-sm cancel-x"><i class="fas fa-times"></i></button>
+          <h1>REGISTER</h1>
           <div class="col-12">
             <mat-form-field>
-              <mat-label>USER NAME</mat-label>
+              <mat-label>User name</mat-label>
               <input
                 required
                 formControlName="username"
@@ -47,7 +47,7 @@
           </div>
           <div class="col-12">
             <mat-form-field>
-              <mat-label>PASSWORD</mat-label>
+              <mat-label>Password</mat-label>
               <input
                 required
                 formControlName="password"
@@ -57,7 +57,7 @@
           </div>
           <div class="col-12">
             <mat-form-field>
-              <mat-label>REPEAT PASSWORD</mat-label>
+              <mat-label>Repeat password</mat-label>
               <input
                 required
                 formControlName="repeatPass"
