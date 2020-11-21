@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   newUserForm: FormGroup;
 
-
   constructor(
     private authService: AuthService,
     private route: Router,
@@ -35,15 +34,11 @@ export class LoginComponent implements OnInit {
     const password = form.value.password;
     this.isLoading = true;
     this.authService.login(email, password).subscribe(resData => {
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000);
+      this.isLoading = false;
       this.route.navigate(['/home']);
-    }, errorDisplayed => {
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000);
-      this.error = errorDisplayed;
+    }, error => {
+      this.isLoading = false;
+      this.error = error;
     });
 
     form.reset();
@@ -55,15 +50,11 @@ export class LoginComponent implements OnInit {
     const password = form.value.password;
     this.isLoading = true;
     this.authService.signup(email, password).subscribe(resData => {
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000)
+      this.isLoading = false;
       this.route.navigate(['/home']);
-    }, errorDisplayed => {
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000);
-      this.error = errorDisplayed;
+    }, error => {
+      this.isLoading = false;
+      this.error = error;
     });
     form.reset();
   }

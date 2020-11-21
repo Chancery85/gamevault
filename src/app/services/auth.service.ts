@@ -1,7 +1,8 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { catchError } from "rxjs/operators";
-import { pipe, throwError } from "rxjs";
+import { catchError, tap } from "rxjs/operators";
+import { BehaviorSubject, pipe, Subject, throwError } from "rxjs";
+import { User } from "../models/user";
 
 interface AuthResponseData {
   kind: string;
@@ -18,6 +19,8 @@ interface AuthResponseData {
 })
 
 export class AuthService {
+  user = new BehaviorSubject<User>(null);
+
   constructor(private http: HttpClient) {
   }
 
@@ -43,6 +46,17 @@ export class AuthService {
     return throwError(errorDisplayed);
   }
 
+  private handleAuth(email: string, userId: string, token: string, expiresIn: number) {
+    const expDate = new Date(new Date().getTime() + expiresIn * 1000);
+    const user = new User(
+      email,
+      userId,
+      token,
+      expDate
+    );
+    this.user.next(user);
+  }
+
   signup(email: string, password: string) {
     return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBe9-eihP_QgbDkldQriTRGdL4ZTaxdtJY', {
       // body needs 3 properties the endpoint expects
@@ -51,7 +65,17 @@ export class AuthService {
       returnSecureToken: true
     })
       .pipe(
-        catchError(this.handleError)
+        catchError(this.handleError),
+        tap(
+          resData => {
+            this.handleAuth(
+              resData.email,
+              resData.idToken,
+              resData.localId,
+              +resData.expiresIn
+            );
+          }
+        )
       )
   }
 
@@ -62,7 +86,17 @@ export class AuthService {
       returnSecureToken: true
     })
       .pipe(
-        catchError(this.handleError)
+        catchError(this.handleError),
+        tap(
+          resData => {
+            this.handleAuth(
+              resData.email,
+              resData.idToken,
+              resData.localId,
+              +resData.expiresIn
+            );
+          }
+        )
       )
   }
 }

@@ -7,7 +7,7 @@
               <a class="brand-link" [routerLink]="'/home'"><span>GAME VAULT</span></a>
               <nav class="nav nav3">
                 <ul>
-                  <li>
+                  <li *ngIf="loggedIn">
                     <a>MANAGE <i class="fas fa-cog spin-right"></i></a>
                     <ul>
                       <li><a>SAVE&nbsp;&nbsp;<i class="far fa-save"></i></a></li>
