@@ -6,44 +6,13 @@
               (ngSubmit)="onSubmitExists(loginForm)"
               class="form-container" *ngIf="userExists">
           <h1>LOGIN</h1>
-          <div class="col-12">
-            <mat-form-field>
-              <mat-label>E-mail</mat-label>
-              <input
-                required
-                formControlName="email"
-                type="text"
-                matInput>
-            </mat-form-field>
+          <div *ngIf="error && !loginForm.get('email').dirty" class="mt-1 mb-1 alert text-center alert-danger">
+            <h4 class="error-display"> {{error}} </h4>
           </div>
-          <div class="col-12">
-            <mat-form-field>
-              <mat-label>Password</mat-label>
-              <input
-                required
-                formControlName="password"
-                type="password"
-                matInput>
-            </mat-form-field>
+          <div *ngIf="isLoading" class="text-center mt-3">
+            <app-loading-spinner></app-loading-spinner>
           </div>
-          <div class="col-12 mt-2 mb-4 text-right">
-            <button [disabled]="!loginForm.valid"
-                    type="submit"
-                    class="btn btn-primary btn-sm btn-block">
-              LOGIN
-            </button>
-          </div>
-          <div class="col-12 register-offer">
-            New to Game Vault? <a (click)="userExists = false" class="mat-tab-link">REGISTER</a>
-          </div>
-        </form>
-
-        <form class="form-container"
-              (ngSubmit)="onSubmitNew(newUserForm)"
-              *ngIf="!userExists" [formGroup]="newUserForm">
           <div *ngIf="!isLoading">
-            <button (click)="userExists = true" type="button" class="btn btn-secondary btn-sm cancel-x"><i class="fas fa-times"></i></button>
-            <h1>REGISTER</h1>
             <div class="col-12">
               <mat-form-field>
                 <mat-label>E-mail</mat-label>
@@ -51,8 +20,8 @@
                   required
                   formControlName="email"
                   type="text"
-                  email
                   matInput>
+                <mat-error *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].dirty">Invalid Email</mat-error>
               </mat-form-field>
             </div>
             <div class="col-12">
@@ -65,14 +34,61 @@
                   matInput>
               </mat-form-field>
             </div>
+            <div class="col-12 mt-2 mb-4 text-right">
+              <button [disabled]="!loginForm.valid"
+                      type="submit"
+                      class="btn btn-primary btn-sm btn-block">
+                LOGIN
+              </button>
+            </div>
+            <div class="col-12 register-offer">
+              New to Game Vault? <a (click)="userExists = false" class="mat-tab-link">REGISTER</a>
+            </div>
+          </div>
+
+        </form>
+
+        <form class="form-container"
+              (ngSubmit)="onSubmitNew(newUserForm)"
+              *ngIf="!userExists" [formGroup]="newUserForm">
+          <div *ngIf="!isLoading">
+            <button (click)="userExists = true" type="button" class="btn btn-secondary btn-sm cancel-x"><i class="fas fa-times"></i></button>
+            <h1>REGISTER</h1>
+            <div *ngIf="error" class="mt-1 mb-1 alert text-center alert-danger">
+              <h4 class="error-display"> {{error}} </h4>
+            </div>
+            <div class="col-12">
+              <mat-form-field>
+                <mat-label>E-mail</mat-label>
+                <input
+                  required
+                  formControlName="email"
+                  type="text"
+                  email
+                  matInput>
+                <mat-error *ngIf="newUserForm.controls['email'].invalid && newUserForm.controls['email'].dirty">Invalid Email</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-12">
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input
+                  required
+                  formControlName="password"
+                  type="password"
+                  matInput>
+                <mat-error *ngIf="newUserForm.get('password').errors && newUserForm.get('password').dirty">Passwords must match</mat-error>
+              </mat-form-field>
+            </div>
             <div class="col-12">
               <mat-form-field>
                 <mat-label>Repeat password</mat-label>
                 <input
                   required
-                  formControlName="repeatPass"
+                  formControlName="confirmPass"
                   type="password"
                   matInput>
+                <mat-error *ngIf="newUserForm.get('confirmPass').errors && newUserForm.get('confirmPass').dirty">Passwords must match</mat-error>
               </mat-form-field>
             </div>
             <div class="col-12 mt-2">
@@ -86,7 +102,6 @@
           <div *ngIf="isLoading" class="text-center mt-3">
             <app-loading-spinner></app-loading-spinner>
           </div>
-
         </form>
       </div>
     </div>
