@@ -1,6 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AuthService } from "../../services/auth.service";
 import { Subscription } from "rxjs";
+import { GameService } from "../../services/game.service";
+import { tap } from "rxjs/operators";
+import { Route } from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -12,7 +15,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private userSub: Subscription;
 
   constructor(
-    private authService: AuthService
+    private authService: AuthService,
+    private gameService: GameService,
+    private router: Route
   ) { }
 
   ngOnInit(): void {
@@ -23,6 +28,16 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.userSub.unsubscribe();
+  }
+
+  logout(){
+
+  }
+
+  fetchGames() {
+    return this.gameService.fetchGames().pipe(
+      tap(data => console.log(data))
+    ).subscribe();
   }
 
 }

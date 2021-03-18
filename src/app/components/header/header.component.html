@@ -11,8 +11,8 @@
                     <a>MANAGE <i class="fas fa-cog spin-right"></i></a>
                     <ul>
                       <li><a>SAVE&nbsp;&nbsp;<i class="far fa-save"></i></a></li>
-                      <li><a>PULL&nbsp;&nbsp;<i class="fas fa-cloud-download-alt"></i></a></li>
-                      <li><a [routerLink]="'/login'">LOGOUT&nbsp;&nbsp;<i class="fas fa-sign-out-alt"></i></a></li>
+                      <li><a (click)="fetchGames()">PULL&nbsp;&nbsp;<i class="fas fa-cloud-download-alt"></i></a></li>
+                      <li><a (click)="logout()">LOGOUT&nbsp;&nbsp;<i class="fas fa-sign-out-alt"></i></a></li>
                     </ul>
                   </li>
                 </ul>
