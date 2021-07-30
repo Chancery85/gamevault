@@ -15,9 +15,7 @@ export class GameService {
     return this.authService.user.pipe(
       take(1),
       exhaustMap(user => {
-        return this.http.get<Game[]>('https://game-vault-12d79.firebaseio.com/games.json',
-          // {params: new HttpParams().set('auth', user.token)} //todo work on params token auth
-          )
+        return this.http.get<Game[]>('https://game-vault-12d79.firebaseio.com/games.json')
       }),
       map(games => {
         return games.map(game => {

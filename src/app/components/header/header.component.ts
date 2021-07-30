@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   constructor(
     private authService: AuthService,
     private gameService: GameService,
-    private router: Route
   ) { }
 
   ngOnInit(): void {

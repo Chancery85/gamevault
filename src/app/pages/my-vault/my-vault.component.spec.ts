@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MyVaultComponent } from './my-vault.component';
+import { NO_ERRORS_SCHEMA } from "@angular/core";
 
 describe('MyVaultComponent', () => {
   let component: MyVaultComponent;
@@ -8,7 +9,8 @@ describe('MyVaultComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MyVaultComponent ]
+      declarations: [ MyVaultComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   });

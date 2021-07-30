@@ -1,10 +1,17 @@
 <div class="container-fluid more-top-margin">
-  <div class="row mt-3">
-    <div class="col">
-      <h2>Welcome back, <span class="user-name">Chance</span></h2>
-    </div>
-    <div class="col">
-      <p><em>Placeholder for buttons of some sort</em></p>
+  <div class="container">
+    <div class="row justify-content-center mt-3">
+      <div class="col-sm-12 col-md-6">
+        <h2>Welcome back, <span class="user-name">Chance</span></h2>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <mat-form-field>
+          <mat-label>Search</mat-label>
+          <input [formControl]="filter"
+                 type="text"
+                 matInput>
+        </mat-form-field>
+      </div>
     </div>
   </div>
   <hr/>
@@ -12,8 +19,10 @@
 
 <div class="row mx-auto mt-1">
   <div class="col-sm col-md-6 col-lg-4 col-xl-3 mb-3"
-       *ngFor="let gameItem of gameData">
+       *ngFor="let gameItem of filteredGameData, let i = index">
     <app-game-item [game]="gameItem"></app-game-item>
-    <h1>woah</h1>
+  </div>
+  <div class="col justify-content-center">
+    <h3 class="text-center alert-danger" *ngIf="filteredGameData.length === 0">No Game data to display</h3>
   </div>
 </div>
