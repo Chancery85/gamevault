@@ -1,10 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Game } from "../../models/game";
-import { GameService } from "../../services/game.service";
-import { combineLatest, debounceTime, distinctUntilChanged, map, startWith, takeUntil, tap } from "rxjs/operators";
-import { FormControl, FormGroup } from "@angular/forms";
-import { Observable, Subject } from "rxjs";
-import { query } from "@angular/animations";
+import { Game } from '../../models/game';
+import { GameService } from '../../services/game.service';
+import { debounceTime, distinctUntilChanged, takeUntil, tap } from 'rxjs/operators';
+import { FormControl } from '@angular/forms';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -28,8 +27,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     ).subscribe();
   }
 
-  filterData(input: string) {
-    this.filteredGameData = this.gameData.filter(item => item.name.toLowerCase().indexOf(input) !== -1);
+  filterData(input: string): Game[] {
+    return this.filteredGameData = this.gameData.filter(item => item.name.toLowerCase().indexOf(input) !== -1);
   }
 
   ngOnInit(): void {
@@ -39,10 +38,10 @@ export class HomeComponent implements OnInit, OnDestroy {
       distinctUntilChanged(),
       tap((input) => this.filterData(input)),
       takeUntil(this.onDestroy$),
-    ).subscribe()
+    ).subscribe();
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.onDestroy$.unsubscribe();
   }
 

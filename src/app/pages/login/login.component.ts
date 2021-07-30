@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup, ValidationErrors, Validators } from "@angular/forms";
-import { AuthService } from "../../services/auth.service";
-import { Router } from "@angular/router";
+import { AbstractControl, FormControl, FormGroup, ValidationErrors, Validators } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -21,13 +21,13 @@ export class LoginComponent implements OnInit {
     private route: Router,
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.initLoginForm();
     this.initNewUserForm();
   }
 
   onSubmitExists(form: FormGroup) {
-    if(!form.valid) {
+    if (!form.valid) {
       return;
     }
     const email = form.value.email;
@@ -44,8 +44,8 @@ export class LoginComponent implements OnInit {
     form.reset();
   }
 
-  onSubmitNew(form: FormGroup) {
-    if(!form.valid) return;
+  onSubmitNew(form: FormGroup): void {
+    if (!form.valid) { return; }
     const email = form.value.email;
     const password = form.value.password;
     this.isLoading = true;
@@ -59,21 +59,21 @@ export class LoginComponent implements OnInit {
     form.reset();
   }
 
-  private initLoginForm() {
+  private initLoginForm(): void {
     this.loginForm = new FormGroup({
-      'email': new FormControl('', [Validators.required, Validators.email]),
-      'password': new FormControl('', Validators.required)
-    })
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', Validators.required)
+    });
   }
 
-  private initNewUserForm() {
+  private initNewUserForm(): void {
     this.newUserForm = new FormGroup({
-      'email': new FormControl('', Validators.required),
-      'password': new FormControl('', Validators.required),
-      'confirmPass': new FormControl('', [Validators.required, this.matchValues('password')])
-    })
-    this.newUserForm.controls['password'].valueChanges.subscribe(() => {
-      this.newUserForm.controls['confirmPass'].updateValueAndValidity();
+      email: new FormControl('', Validators.required),
+      password: new FormControl('', Validators.required),
+      confirmPass: new FormControl('', [Validators.required, this.matchValues('password')])
+    });
+    this.newUserForm.get('password').valueChanges.subscribe(() => {
+      this.newUserForm.get('confirmPass').updateValueAndValidity();
     });
   }
 
