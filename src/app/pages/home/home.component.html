@@ -1,16 +1,22 @@
 <div class="container-fluid more-top-margin">
   <div class="container">
-    <div class="row justify-content-center mt-3">
-      <div class="col-sm-12 col-md-6">
+    <div class="row mt-3">
+      <div class="col-sm-12 col-md-4">
         <h2>Welcome back, <span class="user-name">Chance</span></h2>
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-4">
         <mat-form-field>
-          <mat-label>Search</mat-label>
+          <mat-label>Search through {{gameData.length}} games </mat-label>
           <input [formControl]="filter"
                  type="text"
                  matInput>
         </mat-form-field>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <button class="btn-primary mat-button button"
+          (click)="openAddGame()">
+          <i class="fas fa-plus"></i> ADD NEW GAME
+        </button>
       </div>
     </div>
   </div>

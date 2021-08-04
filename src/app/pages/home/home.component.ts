@@ -41,6 +41,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     ).subscribe();
   }
 
+  openAddGame(): void {
+
+  }
+
   ngOnDestroy(): void {
     this.onDestroy$.unsubscribe();
   }
