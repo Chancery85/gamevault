@@ -15,6 +15,10 @@ export class GameItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addFavorite(): void {
+    this.game.favorite = !this.game.favorite;
+  }
+
   removeGame(): void {
     this.removeGameEmitter.emit();
   }

@@ -9,7 +9,7 @@
     <p>{{game?.description}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button [title]="game?.favorite ? 'Remove from favorites' : 'Add to favorites'" mat-button>
+    <button (click)="addFavorite()" [title]="game?.favorite ? 'Remove from favorites' : 'Add to favorites'" mat-button>
       <i [ngClass]="{'starred':game.favorite}" class="fas fa-star"></i>
     </button>
     <button (click)="editGame()" title="edit game" mat-button class="edit"><i class="fas fa-edit"></i></button>

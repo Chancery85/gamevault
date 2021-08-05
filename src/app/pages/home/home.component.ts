@@ -27,7 +27,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   ) {
     this.gameService.fetchGames().pipe(
       tap(data => {
-        this.gameData = data;
+        // @ts-ignore
+        this.gameData = data.sort((a, b) => b.favorite - a.favorite);
         this.filteredGameData = [...this.gameData];
       })
     ).subscribe();
