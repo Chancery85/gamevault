@@ -21,18 +21,22 @@
     </div>
   </div>
   <hr/>
-</div>
+  <div class="row mx-auto mt-1" *ngIf="gameData.length > 0">
+    <div class="col-sm col-md-6 col-lg-4 col-xl-3 mb-3"
+         *ngFor="let gameItem of filteredGameData, let i = index">
+      <app-game-item
+        (editGameEmitter)="openEditGame(i)"
+        (removeGameEmitter)="removeGame(i)"
+        [game]="gameItem">
+      </app-game-item>
+    </div>
+    <div class="col justify-content-center">
+      <h3 class="text-center alert-danger" *ngIf="filteredGameData.length === 0">No Game data to display</h3>
+    </div>
+  </div>
 
-<div class="row mx-auto mt-1">
-  <div class="col-sm col-md-6 col-lg-4 col-xl-3 mb-3"
-       *ngFor="let gameItem of filteredGameData, let i = index">
-    <app-game-item
-      (editGameEmitter)="openEditGame(i)"
-      (removeGameEmitter)="removeGame(i)"
-      [game]="gameItem">
-    </app-game-item>
+  <div class="row mx-auto mt-1 justify-content-center" *ngIf="gameData.length === 0">
+    <app-loading-spinner></app-loading-spinner>
   </div>
-  <div class="col justify-content-center">
-    <h3 class="text-center alert-danger" *ngIf="filteredGameData.length === 0">No Game data to display</h3>
-  </div>
+
 </div>
