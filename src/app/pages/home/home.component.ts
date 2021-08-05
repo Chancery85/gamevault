@@ -6,6 +6,7 @@ import { FormControl } from '@angular/forms';
 import { Subject } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { NewGameComponent } from './new-game/new-game.component';
+import { EditGameComponent } from './edit-game/edit-game.component';
 
 @Component({
   selector: 'app-home',
@@ -49,8 +50,34 @@ export class HomeComponent implements OnInit, OnDestroy {
   openAddGame(): void {
     this.dialog.open(NewGameComponent, {
       width: '700px',
-      id: 'newGameModal'
-    });
+      backdropClass: 'custom-dialog-backdrop-class',
+      data: {gameItem: {}}
+    }).afterClosed().pipe(
+      tap(newGameData => {
+        if (!newGameData) {
+          return;
+        }
+        this.filteredGameData = [newGameData.data].concat(this.filteredGameData);
+      })
+    ).subscribe();
+  }
+
+  openEditGame(index: number): void {
+    const matchGame: Game = this.filteredGameData.find(game => this.filteredGameData.indexOf(game) === index);
+    this.dialog.open(EditGameComponent, {
+      width: '700px',
+      backdropClass: 'custom-dialog-backdrop-class',
+      data: matchGame
+    }).afterClosed().pipe(tap(editedGameData => {
+      if (!editedGameData) {
+        return;
+      }
+      this.filteredGameData[index] = editedGameData.data;
+    })).subscribe();
+  }
+
+  removeGame(index): Game[] {
+    return this.filteredGameData.splice(index, 1);
   }
 
   ngOnDestroy(): void {

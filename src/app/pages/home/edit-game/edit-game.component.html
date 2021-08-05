@@ -2,8 +2,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="add-heading">NEW GAME DETAILS</h2>
-        <form [formGroup]="newGameForm">
+        <h2 class="add-heading"><span style="color:#5d5d5d">EDIT GAME DETAILS FOR</span> {{data.name | uppercase}}</h2>
+        <form [formGroup]="editGameForm">
           <mat-form-field>
             <mat-label>Name</mat-label>
             <input matInput type="text" required formControlName="name">
@@ -35,8 +35,8 @@
             <textarea [maxLength]="250" matInput type="text" required formControlName="description"></textarea>
           </mat-form-field>
           <!-- TODO rest of Game items needed to create a new Game -->
-          <button (click)="createNewGame()" [disabled]="newGameForm.invalid" class="float-right btn mat-button btn-primary">
-            <i class="fas fa-check"></i>&nbsp; SAVE
+          <button (click)="saveGameChanges()" [disabled]="editGameForm.invalid" class="float-right btn mat-button btn-primary">
+            <i class="fas fa-check"></i>&nbsp; SAVE CHANGES
           </button>
         </form>
       </div>

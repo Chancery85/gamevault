@@ -6,14 +6,14 @@
       </div>
       <div class="col-sm-12 col-md-4">
         <mat-form-field>
-          <mat-label>Search through {{gameData.length}} games </mat-label>
+          <mat-label>Search through {{filteredGameData.length}} games </mat-label>
           <input [formControl]="filter"
                  type="text"
                  matInput>
         </mat-form-field>
       </div>
       <div class="col-sm-12 col-md-4">
-        <button class="btn-primary mat-button button"
+        <button class="btn-primary btn mat-button"
           (click)="openAddGame()">
           <i class="fas fa-plus"></i> ADD NEW GAME
         </button>
@@ -26,7 +26,11 @@
 <div class="row mx-auto mt-1">
   <div class="col-sm col-md-6 col-lg-4 col-xl-3 mb-3"
        *ngFor="let gameItem of filteredGameData, let i = index">
-    <app-game-item [game]="gameItem"></app-game-item>
+    <app-game-item
+      (editGameEmitter)="openEditGame(i)"
+      (removeGameEmitter)="removeGame(i)"
+      [game]="gameItem">
+    </app-game-item>
   </div>
   <div class="col justify-content-center">
     <h3 class="text-center alert-danger" *ngIf="filteredGameData.length === 0">No Game data to display</h3>

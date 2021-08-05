@@ -40,6 +40,9 @@ mat-card-actions {
 mat-card-title{
   color:dodgerblue;
 }
+img {
+  max-height: 250px;
+}
 
 button.mat-button {
   &:hover {

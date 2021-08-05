@@ -12,7 +12,7 @@
     <button [title]="game?.favorite ? 'Remove from favorites' : 'Add to favorites'" mat-button>
       <i [ngClass]="{'starred':game.favorite}" class="fas fa-star"></i>
     </button>
-    <button title="edit game" mat-button class="edit"><i class="fas fa-edit"></i></button>
-    <button title="remove game from collection" mat-button class="negative"><i class="fas fa-trash"></i></button>
+    <button (click)="editGame()" title="edit game" mat-button class="edit"><i class="fas fa-edit"></i></button>
+    <button (click)="removeGame()" title="remove game from collection" mat-button class="negative"><i class="fas fa-trash"></i></button>
   </mat-card-actions>
 </mat-card>

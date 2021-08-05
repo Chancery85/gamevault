@@ -13,12 +13,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { EditGameComponent } from './pages/home/edit-game/edit-game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NewGameComponent,
+    EditGameComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { MatInputModule } from '@angular/material/input';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
