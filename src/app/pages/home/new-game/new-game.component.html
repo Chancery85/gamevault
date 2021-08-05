@@ -1,1 +1,28 @@
-<p>new-game works!</p>
+<mat-dialog-content>
+  <h2 class="add-heading">ADD NEW GAME</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <form [formGroup]="newGameForm">
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" required formControlName="title">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Genre</mat-label>
+            <input matInput type="text" required formControlName="genre">
+          </mat-form-field><mat-form-field>
+          <mat-label>Image Path</mat-label>
+          <input matInput type="text" required formControlName="image">
+        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Description (max 250 chars)</mat-label>
+            <textarea [maxLength]="250" matInput type="text" required formControlName="description"></textarea>
+          </mat-form-field>
+          <!-- TODO rest of Game items needed to create a new Game -->
+          <button class="mat-button btn-info button">ADD NEW GAME</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>

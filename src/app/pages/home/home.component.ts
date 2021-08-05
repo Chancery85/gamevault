@@ -4,6 +4,8 @@ import { GameService } from '../../services/game.service';
 import { debounceTime, distinctUntilChanged, takeUntil, tap } from 'rxjs/operators';
 import { FormControl } from '@angular/forms';
 import { Subject } from 'rxjs';
+import { MatDialog } from '@angular/material/dialog';
+import { NewGameComponent } from './new-game/new-game.component';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +20,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   onDestroy$ = new Subject();
   loggedIn = false;
 
-  constructor(private gameService: GameService) {
+  constructor(
+    private gameService: GameService,
+    private dialog: MatDialog,
+  ) {
     this.gameService.fetchGames().pipe(
       tap(data => {
         this.gameData = data;
@@ -42,7 +47,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   openAddGame(): void {
-
+    this.dialog.open(NewGameComponent, {
+      width: '700px',
+      id: 'newGameModal'
+    });
   }
 
   ngOnDestroy(): void {
